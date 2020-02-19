@@ -1,0 +1,90 @@
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+hr {
+    color: #373A3C;
+    border-top: 1px solid;
+}
+
+footer h5 {
+    font-family: 'Lobster', cursive;
+}
+
+#slider-detail h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #373A3C;
+}
+#slider-detail h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #373A3C;
+}
+#slider-detail a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#newsletter {
+    color: #FFFFFF;
+}
+
+#newsletter h1 {
+    font-weight: 700;
+}
+
+#newsletter span {
+    font-family: 'Lobster', cursive;
+}
+#Relations {
+    font-weight: 400;
+}
+#Relations h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#Relations card-title {
+    font-size: 23px;
+}
+
+#Relations card-text {
+    font-size: 16px;
+}
+
+#Detail h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#Detail h5 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+#Detail p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+.carousel-indicators > li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+    background-color: #373A3C !important;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 20px;
+    height: 50px;
+}

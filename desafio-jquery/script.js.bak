@@ -1,0 +1,18 @@
+$(document).ready(function () {
+
+
+    $("a").attr('target', '_blank');
+
+    $("a:contains('Facebook')").prepend('<i class="fab fa-facebook-f"></i>');
+    $("a:contains('Instagram')").prepend('<i class="fab fa-instagram"></i>');
+    $("a:contains('Twitter')").prepend('<i class="fab fa-twitter"></i>');
+    $("a:contains('Pinterest')").prepend('<i class="fab fa-pinterest"></i>');
+
+    $("h2").click(function () {
+        $(this).css("color", "red");
+    });
+
+    $("section:nth-of-type(2) li:nth-of-type(4)")
+        .append('<ul><li><a href="#">link 4.a</a></li></ul>')
+        .after('<li><a href="#">link 5</a></li>');
+});

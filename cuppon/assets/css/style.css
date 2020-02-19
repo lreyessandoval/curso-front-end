@@ -1,0 +1,45 @@
+:root {
+    --nav-bg-color: #28A745;
+    --text-color-custom: #707070;
+}
+.bgCustom1 {
+    background-color: var(--nav-bg-color) !important;
+}
+
+body {
+    color: #373A3C !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+.text-color-custom {
+    color: var(--text-color-custom) !important;
+    font-size: 16pt;
+    font-weight: 300!important;
+}
+.text-provider {
+    font-size: 16pt;
+    margin-bottom: 0rem;
+    color: #707070 !important;
+    font-weight: 300!important;
+}
+.text-address {
+    font-size: 13pt;
+    color: #707070 !important;
+    font-weight: 300!important;
+}
+
+.text-price-old {
+    color: #707070;
+    font-size: 16pt;
+    font-weight: 300!important;
+}
+.text-price {
+    color: var(--nav-bg-color);
+    font-size: 20pt;
+    font-weight: 500!important;
+}
+.btn-custom {
+    color: #212529 !important;
+    background-color: #F8F9FA !important;
+    border-color: #DDDDDD !important;
+    font-size: 16pt;
+}

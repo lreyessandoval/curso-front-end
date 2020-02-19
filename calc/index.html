@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- referencia bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Mi Estilo -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <title>Calc</title>
+</head>
+
+<body>
+    <!-- Barra Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="assets/img/logo-white.png" alt="Logo" width="86" height="25">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="hero text-dark text-right pt-5 mt-5">
+        <div class="container">
+        </div>
+    </header>
+
+    <!-- calc -->
+    <section id="calc" class="container-fluid my-1 bg-white">
+        <!-- row 1 -->
+        <div class="row">
+            <div class="px-1 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 id="View" class="card-title text-right">0</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row 5 -->
+        <div class="row">
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-danger" href="#" id="btn-clear">CE</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-dark" href="#" id="btn-div">/</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-dark" href="#" id="btn-mult">*</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-warning" href="#" id="btn-back">back</a>
+                </div>
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row">
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-1">1</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-2">2</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-3">3</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-dark" href="#" id="btn-minus">-</a>
+                </div>
+            </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row">
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-4">4</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-5">5</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-6">6</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+
+                </div>
+            </div>
+        </div>
+        <!-- row 4 -->
+        <div class="row">
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-7">7</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-8">8</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-9">9</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-dark" href="#" id="btn-pluss">+</a>
+                </div>
+            </div>
+        </div>
+        <!-- row 5 -->
+        <div class="row">
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-dot">.</a>
+                </div>
+            </div>
+            <div class="p-1 col-3">
+                <div class="card text-center">
+                    <a class="btn btn-secondary" href="#" id="btn-0">0</a>
+                </div>
+            </div>
+            <div class="p-1 col-6">
+                <div class="card text-center">
+                    <a class="btn btn-primary" href="#" id="btn-result">=</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-light p-1 bg-white">
+        <img src="assets/img/logo-black.png" alt="Logo" width="82" height="24">
+        <h5 class="text-center font-weight-bold text-color-custom">© 2020 LRS. Todos los derechos reservados.
+        </h5>
+    </footer>
+
+    <!-- referencia bootstrap    -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/controller.js"></script>
+</body>
+
+</html>

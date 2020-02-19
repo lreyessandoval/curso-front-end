@@ -1,0 +1,272 @@
+body {
+    text-align: center;
+    color: #000f08;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #000f08;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    text-align: left;
+    padding: 1.25rem 4rem;
+    position: fixed;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+    vertical-align: middle;
+}
+
+.navbar-icon {
+    width: 2rem;
+}
+
+.navbar-icon svg {
+    fill: #ffffff;
+}
+
+header {
+    padding-top: 100px;
+    height: 422px;
+    background-image: url(../img/bg-hero.png);
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: right;
+    letter-spacing: 1.5px;
+    margin-top: auto;
+}
+
+header h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: right;
+    letter-spacing: 1.5px;
+    margin-bottom: auto;
+}
+
+.container {
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section-1 {
+    height: 830px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#section-1 img {
+    width: 519px;
+    height: 344px;
+}
+
+#section-1 div {
+    padding-top: 103px;
+}
+
+#section-1 h2 {
+    padding-top: 48px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#section-1 p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#section-2 {
+    height: 501px;
+    background-color: #A4452C;
+    color: #FFFFFF;
+    display: block;
+}
+
+#section-2 img {
+    width: 311px;
+    height: 293px;
+}
+
+.profile {
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.card-profile-img,
+.card-profile {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.card-profile-img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.card-profile {
+    width: 72.5%;
+    vertical-align: middle;
+    margin-left: 2.5%;
+    white-space: normal;
+}
+
+.card-profile h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.card-profile h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card-profile h4 {
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.card-profile h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-profile p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#section-3 {
+    height: 770px;
+    background-color: #FFFFFF;
+    color: #000F08;
+}
+
+#section-3 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 103px;
+    margin-bottom: 75px;
+}
+
+.card-article {
+    width: 415px;
+    height: 244px;
+    display: inline-block;
+}
+
+.card-article h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 43px;
+}
+
+.card-article a {
+    text-decoration: none;
+    color: #000F08;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #000F08;
+    height: 278px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer div {
+    padding-top: 101px;
+}
+
+footer a {
+    color: #FFFFFF;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+footer p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+/********************************
+* Pagina Detalle 
+*********************************/
+
+#detail {
+    background-color: #FFFFFF;
+    color: #000F08;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-detail {
+    max-width: 1085px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#detail h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 73px;
+}
+
+#detail img {
+    width: 1085px;
+    height: 565px;
+    margin-bottom: 73px;
+}
+
+.container-detail-row {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.container-detail-row p {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.container-detail-row h3 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 48px;
+}

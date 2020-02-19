@@ -1,0 +1,47 @@
+:root {
+    --nav-bg-color: #E83E8C;
+    --footer1-bg-color: #17A2B8;
+}
+
+.bgCustom1 {
+    background-color: var(--nav-bg-color) !important;
+}
+
+.bgCustom2 {
+    background-color: var(--footer1-bg-color) !important;
+}
+
+body {
+    color: #373A3C !important;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-title {
+    color: #373A3C !important;
+    font-size: 17px;
+    font-weight: 700;
+}
+.card-text {
+    color: #373A3C !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+.list-group {
+    color: #373A3C !important;
+    font-size: 11px;
+    font-weight: 400;
+}
+.card-body a {
+    color: #1C7CD5 !important;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#product h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #707070!important;
+}
+#contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
