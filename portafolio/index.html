@@ -4,86 +4,289 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- referencia bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!--Font Awesome-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <!-- Mi Estilo -->
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap" rel="stylesheet">
-<title>Portafolio</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:200,700&display=swap" rel="stylesheet">
+<title>Portafolio | Luis Reyes Sandoval</title>
 
 <body>
     <!-- Barra Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mi Portafolio</a>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand display-7" href="#"><span>Mi Portafolio</span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Sobre mí <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#trabajos">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacion">Formación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#About">Sobre mí <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Experience">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
     <!-- header -->
-    <header class="pt-5">
-        <div class="jumbotron jumbotron-fluid bg-dark">
-            <div class="jumbotron-background">
-                <img src="assets/img/header.jpg" class="blur w-100">
-            </div>
-
-            <div class="container text-white">
-
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention to
-                    featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
-            </div>
-            <!-- /.container -->
-
-
+    <section id="header" class="my-fullscreen my-header">
+        <div class="container mt-auto">
+            <h1 class="text-right text-bold text-white">
+                <strong>Luis Reyes Sandoval</strong>
+            </h1>
+            <h2 class="text-right text-white text-light">
+                IT Manager | Product Owner | Scrum Master
+            </h2>
+            <h3 class="text-right text-white text-light">
+                Innovación & Transformación Digital
+            </h3>
         </div>
-    </header>
-
-    <!-- slider-detail -->
-    <section id="slider-detail">
+    </section>
+    <!-- about me -->
+    <section id="About" class="my-subtitle pt-2 pb-1">
+        <h1 class="text-center">SOBRE MI</h1>
+        <hr>
+    </section>
+    <section class="my-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-5">
-                    <img class="w-100" src="assets/img/principal.jpg" alt="Card image">
+            <div class="row p5-5">
+                <div class="col-12 col-sm-6">
+                    <p class="text-justify">
+                        En mi carrera profesional he desempeñado diversos cargos en diferentes empresas de distinta naturaleza, además, he asumido diversos roles y me mantengo involucrado continuamente en la evolución de las tecnologías de la información y sus procesos. Me he
+                        desenvuelto en las áreas de análisis de sistemas, desarrollo, planificación, administración y gerencia de proyectos. Durante los últimos 20 años he liderado el desarrollo de software de verticales en donde he formado equipos de
+                        trabajo multidisciplinarios de alto desempeño, con los cuales hemos realizado el desarrollo, la implementación y el posterior soporte de software líder en el mercado automotriz.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <p class="text-justify">
+                        Siento un gran interés por las tecnologías de la información, la investigación de nuevas herramientas y nuevos paradigmas y mis áreas de interés actuales son: Cloud Computing, Desarrollo de Aplicaciones orientadas a microservicios, uso de métodos agiles
+                        además de las tendencias de arquitectura en Ingeniería de Software.
+                    </p>
+                    <p class="text-justify">
+                        Especialidades: Ingeniería de Software (Desarrollo de Aplicaciones), Gerencia y Administración de Proyectos, Formación técnica de equipos de trabajo, Investigación de nuevas tecnologías. Amplio conocimiento de las reglas de negocio del mercado automotriz.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- slider-carrousel -->
-    <section id="slider-carrousel" class="d-none d-sm-none d-md-none d-lg-block pt-5">
+    <!-- Experience -->
+    <section id="Experience" class="my-subtitle pt-2 pb-1">
+        <h1 class="text-center">EXPERIENCIA</h1>
+        <hr>
+    </section>
+    <section class="my-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Consultor IT - NovoSystem</h5>
+                            <p class="card-text text-center"><small class="text-muted">Ene 2020 a la fecha</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Consultorías de IT (Software, Hardware y Telecomunicaciones)
+                                    </li>
+                                    <li>Evaluación y Dirección de proyectos tecnológicos</li>
+                                    <li>Auditorias de Contratos tecnológicos</li>
+                                    <li>Diseño de Software para optimización de procesos</li>
+                                    <li>Desarrollo de Software FrontEnd / BackEnd empleando tecnologías Cloud Computing</li>
+                                    <li>Gestión de equipos ágiles</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">IT Manager/Product Owner - Solera Inc</h5>
+                            <p class="card-text text-center"><small class="text-muted">May 2013 - Ago 2019</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Product Owner DMS AutoProCloud, definiendo estrategia y sus derivados.</li>
+                                    <li>Crear y liderar el desarrollo del roadmap digital de las iniciativas del DMS.</li>
+                                    <li>Líder Técnico de implementación de software Audatex en Aseguradora Liberty Chile e integraciones B2B para concesionarios automotrices y aseguradoras.</li>
+                                    <li>Gestión y Control de Contratos de TIC: Enlaces dedicados de Internet, telefonía IP, IDS, Infraestructura del DataCenter, etc.</li>
+                                    <li>Confección, gestión, seguimiento y control de Capex/Opex área IT.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Consultor IT - Cloud Service</h5>
+                            <p class="card-text text-center"><small class="text-muted">Ene 2011 - 2013</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Efectuar Consultorías de IT (Software, Hardware y Telecomunicaciones)</li>
+                                    <li>Evaluación y Dirección de proyectos tecnológicos</li>
+                                    <li>Auditorias de Contratos tecnológicos</li>
+                                    <li>Diseño de Software para optimización de procesos</li>
+                                    <li>Desarrollo de Software (DMS) empleando tecnologías Cloud Computing.</li>
+                                    <li>Desarrollo de Plataforma de Servicios (www.autoprocloud.com)</li>
+                                    <li>Implementación Mesas de Ayuda con ITIL</li>
+                                    <li>Optimización de Procesos</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Gerente TI - Serinfo Automotriz S.A.</h5>
+                            <p class="card-text text-center"><small class="text-muted">Sep 1999 - Dic 2010</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Liderar el Diseño, Desarrollo, Implementación y Soporte de Post-Venta del DMS AutoPro2000.</li>
+                                    <li>Personalización del DMS para Perú y Venezuela.</li>
+                                    <li>Evaluación y dirección de Proyectos Tecnológicos(Software-Hardware y Comunicaciones)</li>
+                                    <li>Desarrollo de soluciones tecnológicas para clientes externos e internos</li>
+                                    <li>Adquisición, gestión y Auditoria de infraestructura tecnológica</li>
+                                    <li>Gestión de plataforma y Recursos tecnológicos</li>
+                                    <li>Selección/Desarrollo/Negociación y Revaluación de Proveedores TIC.</li>
+                                    <li>Gestión y Control de Contratos de TIC.</li>
+                                    <li>Desarrollo e Implementación Software Mesa de Ayuda basado en ITIL v2.</li>
+                                    <li>Usuarios, operación 7x24x365</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Jefe Sistemas - Metalpol S.A.</h5>
+                            <p class="card-text text-center"><small class="text-muted">1998 - 1999</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Administración de Infraestructura.</li>
+                                    <li>Diseño y Desarrollo ERP SIGA II (Sistema Integrado de Gestión Administrativa), desarrollo realizado bajo Visual Basic con bases de datos Sql-Server.</li>
+                                    <li>Soporte a Usuarios.</li>
+                                    <li>Administración de Comunicaciones Remotas entre sucursales.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Jefe Sistemas - Soc.Pro-Ayuda Niño Lisiado</h5>
+                            <p class="card-text text-center"><small class="text-muted">1996 - 1998</small></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <ul>
+                                    <li>Administración de Infraestructura.</li>
+                                    <li>Administración de ERP Softland.</li>
+                                    <li>Diseño y Desarrollo Sistema “Gestión Hospitalaria”.</li>
+                                    <li>Implementación del Sistema “Gestión Hospitalaria” en todos los Institutos de Rehabilitación Infantil (Arica, Iquique, Antofagasta, Valparaíso, Concepción, y Puerto Montt).</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="Projects" class="my-subtitle pt-2 pb-1 my-bg-color">
+        <h1 class="text-center">MIS ULTIMOS TRABAJOS</h1>
+        <hr>
+    </section>
+    <section class="pb-5 my-bg-color">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-1.jpg" alt="Card image">
+                        <h5 class="card-title text-center">WebSite Corporativo</h5>
+                        <div class="card-body">
+                            <p class="card-text">Desarrollo de website corporativo con Wordpress.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-2.jpg" alt="Card image">
+                        <h5 class="card-title text-center">Apps Web</h5>
+                        <div class="card-body">
+                            <p class="card-text">ERP desarrollado para los concesionarios automotrices que necesitan: mejorar sus procesos de negocio para realizar una mejor gestión y gerencia de cada área, trabajar en forma más eficiente e integrada, bajar los costos e incrementar
+                                las ventas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-3.jpg" alt="Card image">
+                        <h5 class="card-title text-center">Landingpage Corporativo</h5>
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-4.jpg" alt="Card image">
+                        <h5 class="card-title text-center">FanPage</h5>
+                        <div class="card-body">
+                            <p class="card-text">FanPage para captar y gestionar "Arriendos de Departamentos" en el condominio MarAzul, Coquimbo IV región.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-5.jpg" alt="Card image">
+                        <h5 class="card-title text-center">Landingpage Corporativo</h5>
+                        <div class="card-body">
+                            <p class="card-text">Startup dedicada al desarrollo de software y servicios a medida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-2">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/project-6.jpg" alt="Card image">
+                        <h5 class="card-title text-center">Landingpage Portafolio</h5>
+                        <div class="card-body">
+                            <p class="card-text">Portafolio con proyectos y trabajos realizados en los ultimos años...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="Projects" class="d-none d-sm-none d-md-none d-lg-block py-5 my-bg-color">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -93,48 +296,52 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/slider-1.png" alt="Card image">
+                                    <h5 class="card-title">Meet&Coffe</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/slider-2.png" alt="Card image">
+                                    <h5 class="card-title">Iguana Page</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/slider-3.png" alt="Card image">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card">
-                                    <img class="card-img-top" src="assets/img/slider-4.png" alt="Card image">
+                                    <h5 class="card-title">Suricata</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-12 col-md-3">
+                            <div class="col-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/slider-4.png" alt="Card image">
+                                    <h5 class="card-title">Cuppon</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+
+                                </div>
+                            </div>
+                            <div class="col-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/slider-5.png" alt="Card image">
+                                    <h5 class="card-title">Ricomida</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-4">
                                 <div class="card">
                                     <img class="card-img-top" src="assets/img/slider-6.png" alt="Card image">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="card">
-                                    <img class="card-img-top" src="assets/img/slider-7.png" alt="Card image">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="card">
-                                    <img class="card-img-top" src="assets/img/slider-8.png" alt="Card image">
+                                    <h5 class="card-title">DMark</h5>
+                                    <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
                                 </div>
                             </div>
                         </div>
@@ -149,110 +356,49 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <hr class="my-5">
+        </div>
+    </section> -->
+
+    <!-- slider-carrousel -->
+    <section id="Contact" class="my-subtitle pt-2 pb-1">
+        <h1 class="text-center">CONTACTO</h1>
+        <hr>
+    </section>
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+
+            </div>
         </div>
     </section>
 
-    <!-- Detail -->
-    <section id="Detail" class="bg-ligth">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h4>Ingredientes</h4>
-                    <h5>Masa</h5>
-                    <p>20 gr de levadura seca instantánea 1 cucharadita de azúcar 500 ml agua tibia 100 ml aceite
-                        vegetal 4
-                        cucharadas de aceite de oliva 65 gr harina de maíz fina (chuchoca) 2 cucharaditas de sal 625 gr
-                        harina
-                    </p>
-                    <h5>Salsa</h5>
-                    <p>5 cucharadas de aceite de oliva ½ cebolla picada en cubos finos 2 cucharaditas de sal 3
-                        cucharadas
-                        de Orégano Gourmet 1 ½
-                        cucharadas de Albahaca Gourmet 2 tarro de tomates en cubos al natural 2 cucharaditas de azúcar
-                    </p>
-                    <h5>Relleno</h5>
-                    <p>½ cebolla, en
-                        cubos 500 gr hojas de espinacas picadas 400 gr de champiñones, laminados 300 gr de queso
-                        mozarella. 4 cucharadas queso
-                        parmesano</p>
-                </div>
-
-            </div>
-            <hr>
-        </div>
-    </section>
-    <!-- relations -->
-    <section id="Relations" class="bg-ligth">
-        <div class="container mb-5">
-            <h1 class="text-center pb-5">RECETAS RELACIONADAS</h1>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/recipe-card-1.png" alt="Card image">
-                        <div class="card-body">
-                            <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
-                            <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
-                                vulputate nostra, blandit erat luctus faucibus
-                                orci.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/recipe-card-2.png" alt="Card image">
-                        <div class="card-body">
-                            <h5 class="card-title">TIRAMISÚ</h5>
-                            <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
-                                lacinia sed faucibus mauris, taciti scelerisque
-                                nulla ornare consequat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/recipe-card-3.png" alt="Card image">
-                        <div class="card-body">
-                            <h5 class="card-title">PLATEADA</h5>
-                            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam
-                                laoreet ac eleifend risus, urna auctor inceptos
-                                mattis dapibus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Footer -->
-    <footer class="bg-dark text-center text-light pt-2 pb-4">
-        <div class="containter">
+    <footer class="text-white bg-dark">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-12 col-md-5">
-                    <span>LUIS REYES SANDOVAL</span>
+                <div class="col-12 col-md-6 m-auto text-center text-md-left">
+                    <span>También me ubicas en:</span>
                 </div>
-                <div class="col-12 col-md-7">
-                    <a href="https://github.com/lreyessandoval" target="_blank" class="text-white"><i
-                            class="fab fa-github-square fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/lreyessandoval/" target="_blank" class="text-white"><i
-                            class="fab fa-linkedin fa-3x"></i></a>
-                    <a href="" target="_blank" class="text-white"><i class="fab fa-twitter-square fa-3x"></i></a>
-                    <a href="https://www.facebook.com/lreyessandoval" target="_blank" class="text-white"><i
-                            class="fab fa-facebook-square fa-3x"></i></a>
+                <div class="col-12 col-md-6 text-center text-md-right my-auto">
+                    <a href="https://github.com/lreyessandoval" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-github-square fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/in/lreyessandoval/" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-twitter-square fa-3x"></i></a>
+                    <a href="https://www.facebook.com/lreyessandoval" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-facebook-square fa-3x"></i></a>
                 </div>
             </div>
         </div>
-
     </footer>
     <!-- referencia bootstrap    -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 
