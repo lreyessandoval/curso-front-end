@@ -390,16 +390,31 @@
     </section>
     <section class="my-5">
         <div class="container">
-            <div class="row">
-                <div class="typeform-widget" data-url="https://lreyessandoval.typeform.com/to/YwLZU4"
-                    style="width: 100%; height: 400px;"></div>
-                <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
-                    powered by <a
-                        href="https://admin.typeform.com/signup?utm_campaign=YwLZU4&utm_source=typeform.com-01E1GK16YG1T06ZYBM74XDFKDT-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES"
-                        style="color: #999" target="_blank">Typeform</a> </div>
 
-            </div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="fld-Name">Nombre:</label>
+                        <input type="text" class="form-control" id="fld-Name" placeholder="Nombre...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="fld-email">Email:</label>
+                        <input type="email" class="form-control" id="fld-email" placeholder="Correo electrónico...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="fld-phone">Teléfono:</label>
+                        <input type="text" class="form-control" id="fld-phone" placeholder="Número de telefóno...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fld-text">Comentario:</label>
+                    <textarea class="form-control" id="fld-text" rows="5" placeholder="Tus comentarios"></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <a href="#" class="btn btn-lg btn-primary px-5">Enviar</a>
+                </div>
+            </form>
+
         </div>
     </section>
 
