@@ -141,6 +141,10 @@ footer span {
     background-color: #6AB3D6 !important;
 }
 
+.my-separator {
+    padding-top: 88px;
+}
+
 hr {
     width: 15%;
     color: #ffffff;
