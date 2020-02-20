@@ -143,6 +143,7 @@ footer span {
 
 .my-separator {
     padding-top: 88px;
+    background-color:  transparent !important;
 }
 
 hr {
