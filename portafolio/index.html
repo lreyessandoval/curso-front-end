@@ -390,7 +390,6 @@
     </section>
     <section class="my-5">
         <div class="container">
-
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-4">
@@ -407,8 +406,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="fld-text">Comentario:</label>
-                    <textarea class="form-control" id="fld-text" rows="5" placeholder="Tus comentarios"></textarea>
+                    <label for="fld-comment">Comentario:</label>
+                    <textarea class="form-control" id="fld-comment" rows="5" placeholder="Tus comentarios"></textarea>
                 </div>
                 <div class="form-group text-center">
                     <a href="#" class="btn btn-lg btn-primary px-5" id="btn-sendcontact">Enviar</a>
@@ -417,7 +416,26 @@
 
         </div>
     </section>
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Gracias por completar el formulario... en breve nos pondremos en contacto...
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="text-white bg-dark">
         <div class="container py-5">
