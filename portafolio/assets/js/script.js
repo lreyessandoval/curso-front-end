@@ -57,10 +57,10 @@ function apiSendEmail(contact) {
     var email = {
         "email": {
             "html": "PHA+RXhhbXBsZSB0ZXh0PC9wPg==",
-            "text": "Nomnbre:" + contact.name + " | E-Mail:" + contact.email + " | Telefono: " + contact.phone + " | Mensaje: " + contact.message,
+            "text": "Nombre:" + contact.name + " | E-Mail:" + contact.email + " | Telefono: " + contact.phone + " | Mensaje: " + contact.message,
             "subject": "Contact MyProfile",
             "from": {
-                "name": "ProFile",
+                "name": "MyProfile",
                 "email": contact.email
             },
             "to": [
