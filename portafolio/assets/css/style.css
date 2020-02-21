@@ -14,13 +14,13 @@ section {
 #header h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 5.5vw;
 }
 
 #header h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 62px;
+    font-size: 4.5vw;
 }
 
 #header h3 {
@@ -36,7 +36,7 @@ section {
 .navbar-brand span {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .navbar ul {
@@ -136,7 +136,7 @@ footer span {
 }
 
 .my-separator {
-    padding-top: 88px;
+    padding-top: 86px;
     background-color:  transparent !important;
 }
 
