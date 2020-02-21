@@ -3,7 +3,19 @@ var urlapiemail = "https://api.sendpulse.com/smtp/emails";
 $(document).ready(function () {
     addsmoothScrolling();
     addSendContact();
+    addValidate();
 });
+
+function addValidate() {
+    bootstrapValidate(
+        ['#fld-name', '#fld-name', '#fld-phone', '#fld-comment'],
+        'required:Ingresa tus datos...'
+    );
+    bootstrapValidate(
+        '#fld-email',
+        'email:Ingrese una dirección valida de E-Mail...'
+    );
+}
 
 function addSendContact() {
 
