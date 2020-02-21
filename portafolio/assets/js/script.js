@@ -1,10 +1,11 @@
+var urlapiemail = "https://api.sendpulse.com/smtp/emails";
+
 $(document).ready(function () {
     addsmoothScrolling();
-    addsendContact();
-
+    addSendContact();
 });
 
-function addsendContact() {
+function addSendContact() {
 
     $("#btn-sendcontact").click(function () {
         sendEmail();
@@ -19,24 +20,59 @@ function sendEmail() {
         phone: $("#fld-phone").val(),
         comment: $("#fld-comment").val(),
     }
+    var sendemail = false;
     var message = "";
 
-    if (contact.name == "") message += "Favor ingresar el Nombre...<br>"
-    if (contact.email == "") message += "Favor ingresar el E-Mail...<br>"
-    if (contact.phone == "") message += "Favor ingresar el Teléfono...<br>"
-    if (contact.comment == "") message += "Favor ingresar el Comentario...<br>"
+    if (contact.name == "") message += "Favor ingresar Nombre...<br>"
+    if (contact.email == "") message += "Favor ingresar E-Mail...<br>"
+    if (contact.phone == "") message += "Favor ingresar Teléfono...<br>"
+    if (contact.comment == "") message += "Favor ingresar Comentario...<br>"
 
     var link = $("a[href='#Contact']");;
     if (message == "") {
+        sendemail = true;
         clearForm();
         message = "Gracias por completar el formulario... en breve nos pondremos en contacto...";
         link = $("a[href='#Home']");
     }
     link.click();
+    if (sendemail) apiSendEmail(contact);
+
     $('#exampleModalCenter div .modal-body').html(message);
     $('#exampleModalCenter').modal();
+}
+function apiSendEmail(contact) {
+    var email = {
+        "email": {
+            "html": "PHA+RXhhbXBsZSB0ZXh0PC9wPg==",
+            "text": "Nomnbre:" + contact.name + " | E-Mail:" + contact.email + " | Telefono: " + contact.phone + " | Mensaje: " + contact.message,
+            "subject": "Contact MyProfile",
+            "from": {
+                "name": "ProFile",
+                "email": contact.email
+            },
+            "to": [
+                {
+                    "name": "Admin",
+                    "email": "lreyessandoval@gmail.com"
+                }
+            ]
+        }
+    };
 
-    //alert(JSON.stringify(contact));
+    $.ajax({
+        url: urlapiemail,
+        type: 'post',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(email),
+        success: function (data) {
+            console.log(data);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(textStatus);
+        }
+    });
 }
 function clearForm() {
     $("#fld-name").val('');
