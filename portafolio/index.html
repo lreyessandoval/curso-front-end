@@ -7,35 +7,32 @@
 <meta name="description" content="Perfil Publico Profesional">
 <title>MyProfile | Luis Reyes Sandoval</title>
 <!-- referencia bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!--Font Awesome-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <!-- Mi Estilo -->
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:200,700&display=swap" rel="stylesheet">
-
 
 <body>
     <!-- Barra Navegacion -->
     <section id="Home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand display-7" href="#Home">
-                    <i class="fas fa-id-card fa-1x"></i>
+                <a class="navbar-brand" href="#" id="link-home">
+                    <i class="far fa-id-card fa-1x"></i>
                     <span>MyProfile</span></a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#About">Sobre mí <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">Sobre mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Experience">Experiencia</a>
@@ -52,66 +49,52 @@
         </nav>
     </section>
     <!-- header -->
-    <section id="header" class="my-fullscreen my-header">
+    <section id="Header" class="my-fullscreen my-header">
+        <div class="my-overlay"></div>
         <div class="container mt-auto">
             <h1 class="text-right text-bold text-white">
                 <strong>Luis Reyes Sandoval</strong>
             </h1>
-            <h2 class="text-right text-white text-light">
-                IT Manager | Product Owner | Scrum Master
+            <h2 class="text-right text-white text-white">
+                IT Manager | Product Owner & <span style="white-space: nowrap;">Scrum Master</span>
             </h2>
         </div>
     </section>
     <!-- about me -->
-    <section id="About" class="my-separator">
-    </section>
-    <section class="my-subtitle">
-        <h1 class="text-center">SOBRE MI</h1>
-    </section>
-    <section class="my-5">
+    <section id="About">
+        <div class="my-separator"></div>
+        <h2 class="text-center my-5">SOBRE MI</h2>
         <div class="container">
-            <div class="row p5-5">
-                <div class="col-12 col-sm-6">
+            <div class="row p-4 bg-white">
+                <div class="col-12 col-lg-6">
                     <p class="text-justify">
-                        En mi carrera profesional he desempeñado diversos cargos en diferentes empresas de distinta
-                        naturaleza, además, he asumido diversos roles y me mantengo involucrado continuamente en la
-                        evolución de las tecnologías de la información y sus procesos. Me he
-                        desenvuelto en las áreas de análisis de sistemas, desarrollo, planificación, administración y
-                        gerencia de proyectos. Durante los últimos 20 años he liderado el desarrollo de software de
-                        verticales en donde he formado equipos de
-                        trabajo multidisciplinarios de alto desempeño, con los cuales hemos realizado el desarrollo, la
-                        implementación y el posterior soporte de software líder en el mercado automotriz.
+                        En mi carrera profesional he desempeñado diversos cargos en diferentes empresas de distinta naturaleza, además, he asumido diversos roles y me mantengo involucrado continuamente en la evolución de las tecnologías de la información y sus procesos. Me he
+                        desenvuelto en las áreas de análisis de sistemas, desarrollo, planificación, administración y gerencia de proyectos. Durante los últimos 20 años he liderado el desarrollo de software de verticales en donde he formado equipos de
+                        trabajo multidisciplinarios de alto desempeño, con los cuales hemos realizado el desarrollo, la implementación y el posterior soporte de software líder en el mercado automotriz.
                     </p>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-lg-6">
                     <p class="text-justify">
-                        Siento un gran interés por las tecnologías de la información, la investigación de nuevas
-                        herramientas y nuevos paradigmas y mis áreas de interés actuales son: Cloud Computing,
-                        Desarrollo de Aplicaciones orientadas a microservicios, uso de métodos agiles
+                        Siento un gran interés por las tecnologías de la información, la investigación de nuevas herramientas y nuevos paradigmas y mis áreas de interés actuales son: Cloud Computing, Desarrollo de Aplicaciones orientadas a microservicios, uso de métodos agiles
                         además de las tendencias de arquitectura en Ingeniería de Software.
                     </p>
                     <p class="text-justify">
-                        Especialidades: Ingeniería de Software (Desarrollo de Aplicaciones), Gerencia y Administración
-                        de Proyectos, Formación técnica de equipos de trabajo, Investigación de nuevas tecnologías.
-                        Amplio conocimiento de las reglas de negocio del mercado automotriz.
+                        Especialidades: Ingeniería de Software (Desarrollo de Aplicaciones), Gerencia y Administración de Proyectos, Formación técnica de equipos de trabajo, Investigación de nuevas tecnologías. Amplio conocimiento de las reglas de negocio del mercado automotriz.
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Experience -->
-    <section id="Experience" class="my-separator">
-    </section>
-    <section class="my-subtitle">
-        <h1 class="text-center">EXPERIENCIA</h1>
-    </section>
-    <section class="">
+    <section id="Experience">
+        <div class="my-separator"></div>
+        <h2 class="text-center  my-5">EXPERIENCIA</h2>
         <div class="container">
             <div class="row pt-3">
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Consultor IT - NovoSystem</h5>
+                            <h4 class="card-title text-center">Consultor IT - NovoSystem</h4>
                             <p class="card-text text-center"><small class="text-muted">Ene 2020 a la fecha</small></p>
                         </div>
                         <div class="card-body">
@@ -133,7 +116,7 @@
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">IT Manager/Product Owner - Solera Inc</h5>
+                            <h4 class="card-title text-center">IT Manager/Product Owner - Solera Inc</h4>
                             <p class="card-text text-center"><small class="text-muted">May 2013 - Ago 2019</small></p>
                         </div>
                         <div class="card-body">
@@ -142,10 +125,8 @@
                                     <li>Product Owner DMS AutoProCloud, definiendo estrategia y sus derivados.</li>
                                     <li>Crear y liderar el desarrollo del roadmap digital de las iniciativas del DMS.
                                     </li>
-                                    <li>Líder Técnico de implementación de software Audatex en Aseguradora Liberty Chile
-                                        e integraciones B2B para concesionarios automotrices y aseguradoras.</li>
-                                    <li>Gestión y Control de Contratos de TIC: Enlaces dedicados de Internet, telefonía
-                                        IP, IDS, Infraestructura del DataCenter, etc.</li>
+                                    <li>Líder Técnico de implementación de software Audatex en Aseguradora Liberty Chile e integraciones B2B para concesionarios automotrices y aseguradoras.</li>
+                                    <li>Gestión y Control de Contratos de TIC: Enlaces dedicados de Internet, telefonía IP, IDS, Infraestructura del DataCenter, etc.</li>
                                     <li>Confección, gestión, seguimiento y control de Capex/Opex área IT.</li>
                                 </ul>
                             </p>
@@ -155,7 +136,7 @@
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Consultor IT - Cloud Service</h5>
+                            <h4 class="card-title text-center">Consultor IT - Cloud Service</h4>
                             <p class="card-text text-center"><small class="text-muted">Ene 2011 - 2013</small></p>
                         </div>
                         <div class="card-body">
@@ -177,17 +158,17 @@
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Gerente TI - Serinfo Automotriz S.A.</h5>
+                            <h4 class="card-title text-center">Gerente TI - Serinfo Automotriz S.A.</h4>
                             <p class="card-text text-center"><small class="text-muted">Sep 1999 - Dic 2010</small></p>
                         </div>
                         <div class="card-body">
                             <p class="card-text">
                                 <ul>
-                                    <li>Liderar el Diseño, Desarrollo, Implementación y Soporte de Post-Venta del DMS
-                                        AutoPro2000.</li>
+                                    <li>Liderar el Diseño, Desarrollo, Implementación y Soporte de Post-Venta del DMS AutoPro2000.
+                                    </li>
                                     <li>Personalización del DMS para Perú y Venezuela.</li>
-                                    <li>Evaluación y dirección de Proyectos Tecnológicos(Software-Hardware y
-                                        Comunicaciones)</li>
+                                    <li>Evaluación y dirección de Proyectos Tecnológicos(Software-Hardware y Comunicaciones)
+                                    </li>
                                     <li>Adquisición, gestión y Auditoria de infraestructura tecnológica</li>
                                     <li>Gestión de plataforma y Recursos tecnológicos</li>
                                     <li>Selección/Desarrollo/Negociación y Revaluación de Proveedores TIC.</li>
@@ -201,15 +182,14 @@
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Jefe Sistemas - Metalpol S.A.</h5>
+                            <h4 class="card-title text-center">Jefe Sistemas - Metalpol S.A.</h4>
                             <p class="card-text text-center"><small class="text-muted">1998 - 1999</small></p>
                         </div>
                         <div class="card-body">
                             <p class="card-text">
                                 <ul>
                                     <li>Administración de Infraestructura.</li>
-                                    <li>Diseño y Desarrollo ERP SIGA II (Sistema Integrado de Gestión Administrativa),
-                                        desarrollo realizado bajo Visual Basic con bases de datos Sql-Server.</li>
+                                    <li>Diseño y Desarrollo ERP SIGA II (Sistema Integrado de Gestión Administrativa), desarrollo realizado bajo Visual Basic con bases de datos Sql-Server.</li>
                                     <li>Soporte a Usuarios.</li>
                                     <li>Administración de Comunicaciones Remotas entre sucursales.</li>
                                 </ul>
@@ -220,7 +200,7 @@
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Jefe Sistemas - Soc.Pro-Ayuda Niño Lisiado</h5>
+                            <h4 class="card-title text-center">Jefe Sistemas - Soc.Pro-Ayuda Niño Lisiado</h4>
                             <p class="card-text text-center"><small class="text-muted">1996 - 1998</small></p>
                         </div>
                         <div class="card-body">
@@ -229,9 +209,7 @@
                                     <li>Administración de Infraestructura.</li>
                                     <li>Administración de ERP Softland.</li>
                                     <li>Diseño y Desarrollo Sistema “Gestión Hospitalaria”.</li>
-                                    <li>Implementación del Sistema “Gestión Hospitalaria” en todos los Institutos de
-                                        Rehabilitación Infantil (Arica, Iquique, Antofagasta, Valparaíso, Concepción, y
-                                        Puerto Montt).</li>
+                                    <li>Implementación del Sistema “Gestión Hospitalaria” en todos los Institutos de Rehabilitación Infantil (Arica, Iquique, Antofagasta, Valparaíso, Concepción, y Puerto Montt).</li>
                                 </ul>
                             </p>
                         </div>
@@ -241,20 +219,18 @@
             </div>
         </div>
     </section>
-
     <!-- Projects -->
-    <section id="Projects" class="my-separator">
-    </section>
-    <section class="my-subtitle">
-        <h1 class="text-center">MIS ULTIMOS PROYECTOS</h1>
-    </section>
-    <section class="">
+    <section id="Projects">
+        <div class="my-separator"></div>
+        <h2 class="text-center  my-5">MIS ULTIMOS PROYECTOS</h2>
         <div class="container">
             <div class="row pt-3">
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-1.jpg" alt="Card image">
-                        <h5 class="card-title text-center">Software & Services</h5>
+                        <a href="http://www.audatex.cl/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-1.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">Software & Services</h4>
                         <div class="card-body">
                             <p class="card-text">Diseño y desarrollo de de software y servicios para el area automotriz.
                             </p>
@@ -263,18 +239,21 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-2.jpg" alt="Card image">
-                        <h5 class="card-title text-center">DMS / Web Apps </h5>
+                        <a href="https://autoprocloud.com/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-2.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">DMS / WebApps </h4>
                         <div class="card-body">
-                            <p class="card-text">ERP desarrollado para concesionarios automotrices que permite trabajar
-                                en forma más eficiente e integrada, bajar los costos e incrementar las ventas.</p>
+                            <p class="card-text">ERP desarrollado para concesionarios automotrices que permite trabajar en forma más eficiente e integrada, bajar los costos e incrementar las ventas.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-3.jpg" alt="Card image">
-                        <h5 class="card-title text-center">Landingpage Corporativo</h5>
+                        <a href="https://cloudservice.cl/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-3.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">Landingpage Corporativo</h4>
                         <div class="card-body">
                             <p class="card-text">Startup dedicada a los servicios cloud.</p>
                         </div>
@@ -282,18 +261,21 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-4.jpg" alt="Card image">
-                        <h5 class="card-title text-center">FanPage</h5>
+                        <a href="https://fb.me/deptomarazul/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-4.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">FanPage</h4>
                         <div class="card-body">
-                            <p class="card-text">FanPage para captar y gestionar "Arriendos de Departamentos" en el
-                                condominio MarAzul, Coquimbo IV región.</p>
+                            <p class="card-text">FanPage para captar y gestionar "Arriendos de Departamentos" en el condominio MarAzul, Coquimbo IV región.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-5.jpg" alt="Card image">
-                        <h5 class="card-title text-center">Landingpage Corporativo</h5>
+                        <a href="https://novosystem.io/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-5.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">Landingpage Corporativo</h4>
                         <div class="card-body">
                             <p class="card-text">Startup dedicada al desarrollo de software y servicios a medida.</p>
                         </div>
@@ -301,8 +283,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 p-2">
                     <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/project-6.jpg" alt="Card image">
-                        <h5 class="card-title text-center">Landingpage Portafolio</h5>
+                        <a href="https://myprofile.tech/" target="_blank">
+                            <img class="card-img-top" src="assets/img/project-6.jpg" alt="Card image">
+                        </a>
+                        <h4 class="card-title text-center">Landingpage Portafolio</h4>
                         <div class="card-body">
                             <p class="card-text">Portafolio con proyectos y trabajos realizados en los ultimos años...
                             </p>
@@ -312,10 +296,11 @@
             </div>
         </div>
     </section>
-
     <!-- Tools -->
-    <section id="Tools" class="d-none d-sm-none d-md-none d-lg-block pb-5">
-        <div class="container mt-5">
+    <section id="Tools" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="my-separator"></div>
+        <h3 class="text-center  my-5">HERRAMIENTAS DE DESARROLLO</h3>
+        <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -387,13 +372,11 @@
         </div>
     </section>
 
-    <!-- slider-carrousel -->
-    <section id="Contact" class="my-separator">
-    </section>
-    <section class="my-subtitle">
-        <h1 class="text-center">CONTACTO</h1>
-    </section>
-    <section class="my-5">
+    <!-- Contact -->
+    <section id="Contact" class="mt-5">
+        <div class="my-separator"></div>
+        <h2 class="text-center  my-5">CONTACTO</h2>
+        <br><br>
         <div class="container">
             <form>
                 <div class="form-row">
@@ -418,25 +401,21 @@
                     <a href="#" class="btn btn-lg btn-primary px-5" id="btn-sendcontact">Enviar</a>
                 </div>
             </form>
-
         </div>
+        <div class="my-separator"></div>
     </section>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header text-white">
                     <h5 class="modal-title" id="exampleModalCenterTitle">Contacto</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
                     Gracias por completar el formulario... en breve nos pondremos en contacto...
                 </div>
                 <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary px-5" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -461,22 +440,18 @@
             </div>
             <div class="row pt-5">
                 <div class="col-12">
-                    <h5 class="text-center font-weight-bold text-color-custom">© 2020 Luis Reyes Sandoval. Todos los
-                        derechos reservados.</h5>
+                    <h5 class="text-center font-weight-bold text-color-custom">© 2020 Luis Reyes Sandoval. Todos los derechos reservados.</h5>
                 </div>
             </div>
         </div>
     </footer>
     <!-- referencia bootstrap    -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap-validate.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
