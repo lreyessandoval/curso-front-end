@@ -1,286 +1,307 @@
-           :root {
-              --my-color-1: #343a40;
-              /* #0077B5; */
-              --my-color-2: #F39200;
-              --my-color-3: #96c11f;
-              --my-color-4: #343a40;
-          }
-          /* var(--my-color-1) */
-          
-          body {
-              font-family: 'Open Sans', sans-serif;
-              font-weight: 400;
-              font-size: 16px;
-              background-color: #F5F5F5 !important;
-          }
-          
-          #Header h1,
-          #Header h2 {
-              opacity: 0;
-          }
-          
-          #About h2 {
-              opacity: 0;
-          }
-          
-          #Experience h2,
-          #Experience h4,
-          #Experience li {
-              opacity: 0;
-          }
-          
-          #Projects h2,
-          #Projects img {
-              opacity: 0;
-          }
-          
-          #Contact h2 {
-              opacity: 0;
-          }
-          
-          section {
-              background-position: 50% 50%;
-              background-repeat: no-repeat;
-              background-size: cover;
-          }
-          
-          #Header h1 {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 700;
-          }
-          
-          #Header h2 {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 200;
-          }
-          
-          #Header h3 {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 200;
-          }
-          
-          #About p {
-              line-height: 2.5em;
-          }
-          
-          #About .row {
-              border: 1px solid rgba(0, 0, 0, .125);
-              border-radius: .25rem;
-          }
-          
-          .container {
-              z-index: 2;
-          }
-          
-          .collapse ul li a:active {
-              animation: rubberBand 2s;
-              animation-iteration-count: infinite;
-          }
-          
-          .navbar {
-              background-color: var(--my-color-1) !important;
-              border-bottom: 10px var(--my-color-2) solid !important;
-          }
-          
-          .navbar i {
-              color: var(--my-color-3);
-          }
-          
-          .navbar-brand span {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 700;
-          }
-          
-          .navbar-brand i:hover {
-              animation: rubberBand 2s;
-              animation-iteration-count: infinite;
-          }
-          
-          .navbar-brand span:hover {
-              animation: rubberBand 2s;
-              animation-iteration-count: infinite;
-          }
-          
-          .navbar ul {
-              font-family: 'Open Sans', sans-serif;
-          }
-          
-          .navbar-brand {
-              font-size: 40px;
-              font-weight: 400;
-          }
-          
-          .my-fullscreen .my-overlay {
-              height: 100vh;
-          }
-          
-          .my-fullscreen {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              display: -moz-flex;
-              display: -ms-flex;
-              display: -o-flex;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              -webkit-align-items: center;
-              height: 100vh;
-              -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-              padding-top: 3rem;
-              padding-bottom: 3rem;
-          }
-          
-          .my-header {
-              background-image: url("../img/header.jpg");
-          }
-          
-          .my-overlay {
-              background-color: #000;
-              bottom: 0;
-              left: 0;
-              position: absolute;
-              right: 0;
-              top: 0;
-              z-index: 1;
-              opacity: 0.3;
-          }
-          
-          .mbr-overlay {
-              background-color: #000;
-              bottom: 0;
-              left: 0;
-              opacity: .5;
-              position: absolute;
-              right: 0;
-              top: 0;
-              z-index: 0;
-              pointer-events: none;
-          }
-          
-          #Projects .card:hover {
-              animation: pulse 2s;
-              animation-iteration-count: infinite;
-          }
-          
-          .card-title {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 700;
-          }
-          
-          .card-text {
-              font-size: 14px;
-          }
-          
-          footer span {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 700;
-              font-size: 40px;
-          }
-          
-          .my-subtitle {
-              background-color: var(--my-color-3) !important;
-              color: white;
-          }
-          
-          .my-subtitle h1 {
-              font-family: 'Oswald', sans-serif;
-              font-weight: 700;
-          }
-          
-          .my-bg-color {
-              background-color: #6AB3D6 !important;
-          }
-          
-          .my-separator {
-              padding-top: 96px;
-              background-color: transparent !important;
-          }
-          
-          hr {
-              width: 15%;
-              color: #ffffff;
-              border-top: 2px solid;
-          }
-          
-          .carousel-indicators>li {
-              width: 15px;
-              height: 15px;
-              border-radius: 50% !important;
-              background-color: #373A3C !important;
-          }
-          
-          .carousel-indicators {
-              bottom: -60px;
-          }
-          
-          .carousel-control-next-icon,
-          .carousel-control-prev-icon {
-              width: 20px;
-              height: 50px;
-          }
-          
-          .bg-primary {
-              background-color: var(--my-color-3) !important;
-          }
-          
-          .btn-primary {
-              color: #fff;
-              background-color: var(--my-color-3);
-              border-color: var(--my-color-3);
-          }
-          /* Extra small devices (portrait phones, less than 576px) */
-          
-          @media (max-width: 575.98px) {
-              h1 {
-                  font-size: 2.5rem;
-              }
-              h2 {
-                  font-size: 2rem;
-              }
-          }
-          /* Small devices (landscape phones, 576px and up) */
-          
-          @media (min-width: 576px) and (max-width: 767.98px) {
-              h1 {
-                  font-size: 3rem;
-              }
-              h2 {
-                  font-size: 2.5rem;
-              }
-          }
-          /* Medium devices (tablets, 768px and up) */
-          
-          @media (min-width: 768px) and (max-width: 991.98px) {
-              h1 {
-                  font-size: 4rem;
-              }
-              h2 {
-                  font-size: 3rem;
-              }
-          }
-          /* Large devices (desktops, 992px and up) */
-          
-          @media (min-width: 992px) and (max-width: 1199.98px) {
-              h1 {
-                  font-size: 5rem;
-              }
-              h2 {
-                  font-size: 3.5rem;
-              }
-          }
-          /* Extra large devices (large desktops, 1200px and up) */
-          
-          @media (min-width: 1200px) {
-              h1 {
-                  font-size: 5.5rem;
-              }
-              h2 {
-                  font-size: 4rem;
-              }
-          }
-          
-          .modal-header {
-              background-color: var(--my-color-1);
-          }
+:root {
+    --my-color-1: #343a40;
+    /* #0077B5; */
+    --my-color-2: #F39200;
+    --my-color-3: #96c11f;
+    --my-color-4: #343a40;
+}
+
+
+/* var(--my-color-1) */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #F5F5F5 !important;
+}
+
+#Header h1,
+#Header h2 {
+    opacity: 0;
+}
+
+#About h2 {
+    opacity: 0;
+}
+
+#Experience h2,
+#Experience h4,
+#Experience li {
+    opacity: 0;
+}
+
+#Projects h2,
+#Projects img {
+    opacity: 0;
+}
+
+#Contact h2 {
+    opacity: 0;
+}
+
+section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+#Header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+#Header h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+#About p {
+    line-height: 2.5em;
+}
+
+#About .row {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.container {
+    z-index: 2;
+}
+
+.collapse ul li a:active {
+    animation: rubberBand 2s;
+    animation-iteration-count: infinite;
+}
+
+.navbar {
+    background-color: var(--my-color-1) !important;
+    border-bottom: 10px var(--my-color-2) solid !important;
+}
+
+.navbar i {
+    color: var(--my-color-3);
+}
+
+.navbar-brand span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-brand i:hover {
+    animation: rubberBand 2s;
+    animation-iteration-count: infinite;
+}
+
+.navbar-brand span:hover {
+    animation: rubberBand 2s;
+    animation-iteration-count: infinite;
+}
+
+.navbar ul {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.my-fullscreen .my-overlay {
+    height: 100vh;
+}
+
+.my-fullscreen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.my-header {
+    background-image: url("../img/header.jpg");
+}
+
+.my-overlay {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.mbr-overlay {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#Projects .card:hover {
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+}
+
+.card-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+footer span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.my-subtitle {
+    background-color: var(--my-color-3) !important;
+    color: white;
+}
+
+.my-subtitle h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.my-bg-color {
+    background-color: #6AB3D6 !important;
+}
+
+.my-separator {
+    padding-top: 96px;
+    background-color: transparent !important;
+}
+
+hr {
+    width: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.carousel-indicators>li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+    background-color: #373A3C !important;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 20px;
+    height: 50px;
+}
+
+.bg-primary {
+    background-color: var(--my-color-3) !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--my-color-3);
+    border-color: var(--my-color-3);
+}
+
+.modal-header {
+    background-color: var(--my-color-1);
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .navbar-brand {
+        font-size: 3rem;
+    }
+}
