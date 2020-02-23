@@ -393,6 +393,17 @@ Time Line
     background-color: var(--uiTimelineSecondaryColor);
 }
 
+.timeline__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 575px) {
+    .timeline {
+        max-width: calc(100% - 20px);
+    }
+}
+
 @media screen and (min-width: 641px) {
     .timeline:before {
         left: 30px;
@@ -418,7 +429,7 @@ Time Line
         left: 0;
     }
     .timeline__group {
-        padding-top: 40px;
+        padding-top: 45px;
     }
     .timeline__box {
         padding-left: 20px;
