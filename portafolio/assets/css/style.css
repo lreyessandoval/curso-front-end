@@ -1,13 +1,9 @@
 :root {
     --my-color-1: #343a40;
-    /* #0077B5; */
     --my-color-2: #F39200;
     --my-color-3: #96c11f;
     --my-color-4: #343a40;
 }
-
-
-/* var(--my-color-1) */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -317,7 +313,7 @@ Time Line
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    max-width: 95%;
+    width: 100%;
 }
 
 .timeline:before {
@@ -388,7 +384,9 @@ Time Line
 }
 
 .timeline__post {
-    padding: 1.5rem 2rem;
+    /* padding: 1.5rem 2rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 2px;
     border-left: 3px solid var(--uiTimelineMainColor);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
@@ -438,16 +436,3 @@ Time Line
     --timelineMainColor: var(--my-color-3);
     font-size: 16px;
 }
-
-
-/*
-p {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-*/
