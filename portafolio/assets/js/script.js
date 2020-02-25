@@ -1,4 +1,11 @@
-var urlapiemail = "https://api.sendpulse.com/smtp/emails";
+var emailParam = {
+    url: "/send-email.php",
+    from: 'MyProfile <contact@myprofile.tech>',
+    to: 'lreyessandoval@gmail.com',
+    cc: '',
+    cco: '',
+    subject: 'Contacto Sitio Web',
+};
 
 $(document).ready(function() {
     addsmoothScrolling();
@@ -29,11 +36,17 @@ function addSendContact() {
 
 function sendEmail() {
     var contact = {
+        to: emailParam.to,
+        from: emailParam.from,
         name: $("#fld-name").val(),
         email: $("#fld-email").val(),
         phone: $("#fld-phone").val(),
         comment: $("#fld-comment").val(),
+        subject: emailParam.subject,
+        message: '',
     }
+    contact.message = getMessage(contact);
+
     var sendemail = false;
     var message = "";
 
@@ -62,28 +75,12 @@ function sendEmail() {
 }
 
 function apiSendEmail(contact) {
-    var email = {
-        "email": {
-            "html": "PHA+RXhhbXBsZSB0ZXh0PC9wPg==",
-            "text": "Nombre:" + contact.name + " | E-Mail:" + contact.email + " | Telefono: " + contact.phone + " | Mensaje: " + contact.message,
-            "subject": "Contact MyProfile",
-            "from": {
-                "name": "MyProfile",
-                "email": contact.email
-            },
-            "to": [{
-                "name": "Admin",
-                "email": "lreyessandoval@gmail.com"
-            }]
-        }
-    };
-
     $.ajax({
-        url: urlapiemail,
+        url: emailParam.url,
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
-        data: JSON.stringify(email),
+        data: JSON.stringify(contact),
         success: function(data) {
             console.log(data);
         },
@@ -192,4 +189,27 @@ function addAnimation() {
         offset: '80%',
         triggerOnce: true
     });
+}
+
+function getMessage(contact) {
+    var message =
+        "<!DOCTYPE html>" +
+        "<html lang='es'>" +
+        "<meta charset='UTF-8'>" +
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>" +
+        "<meta http-equiv='X-UA-Compatible' content='ie=edge'>" +
+        "<title>" + emailParam.subject + "</title>" +
+        "<body>" +
+        "<p>" +
+        "<span>Nombre: " + contact.name + "</span><br>" +
+        "<span>E-Mail: " + contact.email + "</span><br>" +
+        "<span>Teléfono: " + contact.phone + "</span><br>" +
+        "<span>Comentario: " + contact.comment + "</span><br>" +
+        "</p>" +
+        "<p>Atte.</p>" +
+        "<p>Team MyProfile</p>" +
+        "</body>" +
+        "</html>";
+
+    return message;
 }
