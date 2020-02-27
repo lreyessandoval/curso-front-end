@@ -2,8 +2,7 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 @import '../abstracts/variables';
-
 body {
     font-family: $roboto;
-    font-size: ;
+    font-size: $medium;
 }
