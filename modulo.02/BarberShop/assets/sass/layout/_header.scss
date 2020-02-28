@@ -1,3 +1,53 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@import '../abstracts/variables';
+
+section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Header h1 {
+    font-family: $playfair !important;
+    font-style: italic;
+    font-weight: $playfair-blackitaly;
+}
+
+// Header Class
+.my-fullscreen .my-overlay {
+    height: 100vh;
+}
+
+.my-fullscreen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.my-header {
+    background-image: url("../images/post-image.jpg");
+}
+
+.my-overlay {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.3;
+}

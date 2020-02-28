@@ -1,47 +1,41 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-// Header Class
-.my-fullscreen .my-overlay {
-    height: 100vh;
-}
-
-.my-fullscreen {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-align-items: center;
-    height: 100vh;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.my-header {
-    background-image: url("../images/post-image.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.my-overlay {
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    opacity: 0.3;
-}
 
 .container {
     z-index: 2;
+}
+#Blog { 
+    h5 {
+        color:$nickel !important;
+        font-family: $playfair !important;
+        font-weight: $playfair-regular;
+    }
+    p {
+        color:$nickel !important;
+        font-family: $roboto !important;
+        font-weight: $roboto-ligth;
+        line-height: 25px;
+        strong {
+            color: $ruddypink;
+        }
+    }
+    .my-author {
+        font-family: $playfair !important;
+        font-style: italic;
+        font-weight: $playfair-blackitaly;
+         color: $eerieblack;
+    }
+    .my-nickname {
+        color: $ruddypink;
+    }
+    .my-url {
+        color: $ruddypink;
+    }
+}
+
+
+
+#Pagination {
+    background-color: $platinum;
 }

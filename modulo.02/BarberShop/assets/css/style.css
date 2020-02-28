@@ -10,11 +10,24 @@
 body {
   font-family: "Roboto", serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 /**
  * Basic typography style for copy text
  */
+section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Header h1 {
+  font-family: "Playfair Display", sans-serif !important;
+  font-style: italic;
+  font-weight: 900;
+}
+
 .my-fullscreen .my-overlay {
   height: 100vh;
 }
@@ -39,9 +52,6 @@ body {
 
 .my-header {
   background-image: url("../images/post-image.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .my-overlay {
@@ -55,8 +65,148 @@ body {
   opacity: 0.3;
 }
 
+.navbar-dark {
+  background-color: #121619 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFF;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #D76C69 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #6C6E70;
+}
+
+.rounded-pill-left {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
+
+.rounded-pill-rigth {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
+}
+
+.page-link {
+  color: #121619;
+}
+
+.page-item.active .page-link {
+  background-color: #6C6E70;
+  border-color: #6C6E70;
+}
+
 .container {
   z-index: 2;
+}
+
+#Blog h5 {
+  color: #6C6E70 !important;
+  font-family: "Playfair Display", sans-serif !important;
+  font-weight: 400;
+}
+#Blog p {
+  color: #6C6E70 !important;
+  font-family: "Roboto", serif !important;
+  font-weight: 300;
+  line-height: 25px;
+}
+#Blog p strong {
+  color: #D76C69;
+}
+#Blog .my-author {
+  font-family: "Playfair Display", sans-serif !important;
+  font-style: italic;
+  font-weight: 900;
+  color: #121619;
+}
+#Blog .my-nickname {
+  color: #D76C69;
+}
+#Blog .my-url {
+  color: #D76C69;
+}
+
+#Pagination {
+  background-color: #E6E7E7;
+}
+
+body {
+  background-color: #FFF;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .navbar-brand {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
