@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+
+
+#Pagination {
+    background-color: $lightgray;
+    
+    .page-link {
+        color: $eerieblack;
+    }
+
+    .page-item.active .page-link {
+        background-color: $eerieblack;
+        border-color: $eerieblack;
+        color: $white;
+    }
+}
+

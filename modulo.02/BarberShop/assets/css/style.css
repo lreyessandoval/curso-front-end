@@ -91,13 +91,16 @@ section {
   border-bottom-right-radius: 50rem !important;
 }
 
-.page-link {
+#Pagination {
+  background-color: #D1D1D1;
+}
+#Pagination .page-link {
   color: #121619;
 }
-
-.page-item.active .page-link {
-  background-color: #6C6E70;
-  border-color: #6C6E70;
+#Pagination .page-item.active .page-link {
+  background-color: #121619;
+  border-color: #121619;
+  color: #FFF;
 }
 
 .container {
@@ -114,6 +117,7 @@ section {
   font-family: "Roboto", serif !important;
   font-weight: 300;
   line-height: 25px;
+  text-align: justify;
 }
 #Blog p strong {
   color: #D76C69;
@@ -123,16 +127,13 @@ section {
   font-style: italic;
   font-weight: 900;
   color: #121619;
+  font-size: x-large;
 }
 #Blog .my-nickname {
   color: #D76C69;
 }
 #Blog .my-url {
   color: #D76C69;
-}
-
-#Pagination {
-  background-color: #E6E7E7;
 }
 
 body {

@@ -16,6 +16,7 @@
         font-family: $roboto !important;
         font-weight: $roboto-ligth;
         line-height: 25px;
+        text-align: justify;
         strong {
             color: $ruddypink;
         }
@@ -24,7 +25,8 @@
         font-family: $playfair !important;
         font-style: italic;
         font-weight: $playfair-blackitaly;
-         color: $eerieblack;
+        color: $eerieblack;
+        font-size: x-large;
     }
     .my-nickname {
         color: $ruddypink;
@@ -32,10 +34,4 @@
     .my-url {
         color: $ruddypink;
     }
-}
-
-
-
-#Pagination {
-    background-color: $platinum;
 }
