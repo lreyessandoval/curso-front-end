@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: #333;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .column.side {
+            width: 30%;
+            background-color: #EEEEEE;
+        }
+
+        .column.middle {
+            width: 70%;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        .footer {
+            background-color: #AAAAAA;
+            text-align: center;
+            padding: 5px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Título pagina</h1>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#">Item-1</a> </li>
+                <li><a href="#">Item-2</a> </li>
+                <li><a href="#">Item-3</a> </li>
+                <li><a href="#">Item-4</a> </li>
+                <li><a href="#">Item-5</a> </li>
+            </ul>
+        </div>
+
+        <div class="column middle">
+            <h2>Sub-título</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis
+                velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam
+                placerat,
+                purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan
+                convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis
+                velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam
+                placerat,
+                purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan
+                convallis.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h5>Todos los derechos reservados</h5>
+    </div>
+</body>
+
+</html>
