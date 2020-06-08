@@ -14,31 +14,36 @@
 
 <body>
     <!-- Barra Navegacion -->
-    <section id="Home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#" id="link-home">
+    <section id="Navbar">
+        <nav class="flex-container navbar navbar-expand-lg navbar-light bg-white fixed-top px-2 px-sm-5">
+            <div class="flex-column-left">
+                <div class="item">
+                    <a class="navbar-brand" href="#" id="link-home">
                     GIGEO<sup class="text-sup">ART</sup>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-search fa-1x"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-video fa-1x"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-plus fa-1x"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-bell fa-1x"></i></a>
-                        </li>
-                    </ul>
+                </div>
+            </div>
+            <div class="flex-column-right">
+                <div class="item">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-search fa-1x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-video fa-1x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-plus fa-1x"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="far fa-bell fa-1x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,18 +55,20 @@
 
         </div>
     </section>
-    <!-- subheader -->
-    <section id="Deck">
-        <div class="">
-            <div class="row py-3 mx-5">
-                <div class="col-12 col-lg-1 text-center text-lg-right">
+    <!-- profile -->
+    <section id="Profile">
+        <div class="flex-container mt-5 px-2 px-sm-5">
+            <div class="flex-column-left">
+                <div class="item">
                     <img class="rounded-circle" src="assets/images/profile-image.png" alt="user" height="100" width="100">
                 </div>
-                <div class="col-12 col-lg-1 text-center text-lg-left">
-                    <span class="my-author">Yuki Mukami</span><br>
-                    <span class="my-url">30.000 seguidores</span>
+                <div class="item ml-2">
+                    <h3 class="my-author">Yuki Mukami</h3>
+                    <span class="my-follower">30.000 seguidores</span>
                 </div>
-                <div class="col col-lg-10 d-lg-block text-lg-right">
+            </div>
+            <div class="flex-column-right d-none d-md-inline">
+                <div class="item">
                     <button class="btn btn-primary disabled">Mensaje</button>
                     <button class="btn btn-danger disabled">Seguir</button>
                 </div>
@@ -69,12 +76,13 @@
         </div>
         <hr>
     </section>
-    <section>
+    <!-- Deck -->
+    <section id="Deck">
         <div class="">
-            <div class="row mx-5 my-5">
+            <div class="row my-5 mx-2 mx-sm-5">
                 <h2>Videos Populares</h2>
             </div>
-            <div class="row mx-5 my-5">
+            <div class="row my-5 mx-2 mx-sm-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card border-0 mb-2">
                         <img src="assets/images/image-1.png" class="card-img-top" alt="...">

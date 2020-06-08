@@ -1,32 +1,50 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
-.container {
-    z-index: 2;
-}
-
-#Deck {
-    p {
-        color: $nickel !important;
-        font-family: $roboto !important;
-        font-weight: $roboto-ligth;
-        line-height: 25px;
-        text-align: justify;
-        strong {
-            color: $ruddypink;
+    // -----------------------------------------------------------------------------
+    // This file contains styles that are specific to the home page.
+    // -----------------------------------------------------------------------------
+    .container {
+        z-index: 2;
+    }
+    
+    .flex-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .flex-column-left {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    
+    .flex-column-left {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    
+    #Profile {
+        p {
+            color: $nickel !important;
+            font-family: $roboto !important;
+            font-weight: $roboto-ligth;
+            line-height: 25px;
+            text-align: justify;
+            strong {
+                color: $ruddypink;
+            }
+        }
+        .my-author {
+            font-family: $playfair !important;
+            font-style: italic;
+            font-weight: $playfair-blackitaly;
+            color: $eerieblack;
+        }
+        .my-nickname {
+            color: $nickel;
+        }
+        .my-follower {
+            color: $nickel;
         }
     }
-    .my-author {
-        font-family: $playfair !important;
-        font-style: italic;
-        font-weight: $playfair-blackitaly;
-        color: $eerieblack;
-        font-size: x-large;
-    }
-    .my-nickname {
-        color: $ruddypink;
-    }
-    .my-url {
-        color: $ruddypink;
-    }
-}

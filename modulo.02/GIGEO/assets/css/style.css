@@ -64,6 +64,10 @@ section {
   font-size: 25%;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #121619;
+}
+
 .rounded-pill-left {
   border-top-left-radius: 50rem !important;
   border-bottom-left-radius: 50rem !important;
@@ -78,28 +82,46 @@ section {
   z-index: 2;
 }
 
-#Deck p {
+.flex-container {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-column-left {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.flex-column-left {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+#Profile p {
   color: #6C6E70 !important;
   font-family: "Roboto", serif !important;
   font-weight: 300;
   line-height: 25px;
   text-align: justify;
 }
-#Deck p strong {
+#Profile p strong {
   color: #D76C69;
 }
-#Deck .my-author {
+#Profile .my-author {
   font-family: "Playfair Display", sans-serif !important;
   font-style: italic;
   font-weight: 900;
   color: #121619;
-  font-size: x-large;
 }
-#Deck .my-nickname {
-  color: #D76C69;
+#Profile .my-nickname {
+  color: #6C6E70;
 }
-#Deck .my-url {
-  color: #D76C69;
+#Profile .my-follower {
+  color: #6C6E70;
 }
 
 body {
