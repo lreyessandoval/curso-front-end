@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@import '../abstracts/variables';
+body {
+    font-family: $raleway;
+    font-size: $medium;
+    font-weight: $raleway-regular;
+}

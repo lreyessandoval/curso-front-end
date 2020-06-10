@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@import '../abstracts/variables';
+.btn-primary {
+    background-color: $ballblue;
+    border-color: $ballblue;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $middleblue;
+    border-color: $middleblue;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+    background-color: $lavendergray;
+    border-color: $lavendergray;
+    box-shadow: 0 0 0 0.2rem $lavendergray;
+}
