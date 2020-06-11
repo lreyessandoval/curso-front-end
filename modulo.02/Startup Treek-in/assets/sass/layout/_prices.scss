@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the section prices of the site/application.
+// -----------------------------------------------------------------------------
+@import '../abstracts/variables';
+#Prices {
+    background-image: url("../images/bg-price.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+}
+
+#Deck {
+    background-color: $onyx;
+}

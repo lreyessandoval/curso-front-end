@@ -15,11 +15,11 @@
 <body>
     <!-- Barra Navegacion -->
     <section id="Navbar">
-        <nav class="container navbar navbar-expand-lg navbar-light bg-white px-2 px-sm-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-2 px-sm-5">
             <div class="flex-column-left">
                 <div class="item">
                     <a class="navbar-brand" href="#" id="link-home">
-                        <img src="assets/images/Logo.svg" alt="">
+                        <img src="assets/images/Logo.svg" alt="logo">
                     </a>
                 </div>
             </div>
@@ -37,33 +37,36 @@
                 </ul>
             </div>
             <div class="flex-column-right">
-                <div class="item">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Iniciar Sesión</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-primary" href="#">Registrarse</i></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="#">Registrarse</i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </section>
     <!-- header -->
+
     <section id="Header" class="my-fullscreen my-header">
-        <div class="my-overlay"></div>
-        <div class="container my-auto">
-            <h1>Haz Trekking sin Parar</h1>
-            <p>Con Trekk-in te despreocupas de la estimación de tu viaje</p>
+        <div class="container">
+            <div class="my-text-box">
+                <h1 class="text-center text-md-left"><strong>Haz Trekking sin Parar</strong></h1>
+                <h5>Con Trekk-in te despreocupas de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</h5>
+
+            </div>
+            <div style="margin-top: 10%; width: 400px;">
+            </div>
         </div>
     </section>
-    <!-- profile -->
+    <!-- Features -->
     <section id="Features">
         <div class="container mt-5 px-2 px-sm-5">
             <div class="row mb-5">
@@ -72,24 +75,29 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <img src="assets/images/bar-graph.svg" alt="">
                 </div>
-                <div class="col">
-                    <h3>Estadiscticas de tu progreso</h3>
+                <div class="col-12 col-sm-6">
+                    <h3>Estadisticas de tu progreso</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, pariatur non aspernatur excepturi provident, reiciendis culpa eum sapiente obcaecati dicta quas deleniti, est cupiditate voluptatibus cum facere. Similique, quo impedit!</p>
                 </div>
             </div>
         </div>
-        <hr>
     </section>
-    <!-- Deck -->
+    <!-- Prices -->
+    <section id="Prices">
+        <div class="container">
+            <div class="row mt-5 mx-2 mx-sm-5 text-center">
+                <div class="col text-center">
+                    <h2>Precios</h2>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="Deck">
         <div class="container">
-            <div class="row my-5 mx-2 mx-sm-5 text-center">
-                <h2>Precios</h2>
-            </div>
-            <div class="row my-5 mx-2 mx-sm-5">
+            <div class="row pt-5 mx-2 mx-sm-5">
                 <div class="col-12 col-sm-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -124,10 +132,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-5"></div>
         </div>
     </section>
-    <section id="Profile">
-        <div class="flex-container-footer mt-5 px-2 px-sm-5">
+    <section id="Footer">
+        <div class="flex-container-footer px-2 px-sm-5">
             <div class="flex-column-left">
                 <a class="nav-link" href="#">Legal</a>
                 <a class="nav-link" href="#">Cookies</i></a>

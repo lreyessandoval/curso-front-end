@@ -2,37 +2,25 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 @import '../abstracts/variables';
-section {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 // Header Class
-.my-fullscreen .my-overlay {
-    height: 0vh;
+.my-fullscreen {
+    display: flex;
+    height: 90vh;
+    box-sizing: border-box;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    flex-direction: column;
 }
 
-.my-fullscreen {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-align-items: center;
-    height: 100vh;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.my-fullscreen .my-overlay {
+    height: 90vh;
 }
 
 .my-header {
-    background-image: url("../images/bg-hero.svg")
+    background-image: url("../images/bg-hero.svg");
+    background-size: cover;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
 }
 
 .my-overlay {
@@ -46,7 +34,7 @@ section {
     opacity: 0.3;
 }
 
-.text-sup {
-    top: -2em;
-    font-size: 25%;
+.my-text-box {
+    margin-top: 10%;
+    width: 400px;
 }

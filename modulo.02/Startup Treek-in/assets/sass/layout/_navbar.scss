@@ -1,6 +1,4 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the navbar of the site/application.
 // -----------------------------------------------------------------------------
-.navbar-light .navbar-nav .nav-link {
-    color: $white;
-}
+@import '../abstracts/variables';
