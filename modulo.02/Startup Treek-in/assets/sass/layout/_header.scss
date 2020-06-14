@@ -23,6 +23,10 @@
     background-repeat: no-repeat;
 }
 
+.my-header h1 {
+    font-weight: $raleway-bold;
+}
+
 .my-overlay {
     background-color: #000;
     bottom: 0;
@@ -36,5 +40,5 @@
 
 .my-text-box {
     margin-top: 10%;
-    width: 400px;
+    width: 380px;
 }

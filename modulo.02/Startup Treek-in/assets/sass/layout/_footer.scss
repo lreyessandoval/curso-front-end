@@ -2,13 +2,20 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 @import '../abstracts/variables';
-.flex-container-footer {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #Footer {
     background-color: $raisingblack;
+    color: $platinum;
+}
+
+#Footer a {
+    color: $platinum;
+}
+
+#Footer .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }

@@ -20,3 +20,11 @@
     border-color: $lavendergray;
     box-shadow: 0 0 0 0.2rem $lavendergray;
 }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $ballblue;
+    border-color: $ballblue;
+}

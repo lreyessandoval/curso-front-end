@@ -4,22 +4,3 @@
     .container {
         z-index: 2;
     }
-    
-    .flex-container {
-        display: flex;
-        align-items: baseline;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .flex-column-left {
-        display: flex;
-        align-items: baseline;
-        flex-direction: row;
-    }
-    
-    .flex-column-rigth {
-        display: flex;
-        align-items: baseline;
-        flex-direction: row;
-    }

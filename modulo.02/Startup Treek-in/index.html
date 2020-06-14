@@ -8,48 +8,43 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i|Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Barra Navegacion -->
-    <section id="Navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-2 px-sm-5">
-            <div class="flex-column-left">
-                <div class="item">
-                    <a class="navbar-brand" href="#" id="link-home">
-                        <img src="assets/images/Logo.svg" alt="logo">
-                    </a>
-                </div>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 px-sm-5 flex-container-nav">
+            <div class="item-1">
+                <a class="navbar-brand" href="#" id="link-home">
+                    <img src="assets/images/Logo.svg" alt="logo">
+                </a>
             </div>
-            <div class="flex-column-left">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-2">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Caracteristicas</i></a>
+                        <a class="nav-link" href="#">Caracteristicas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</i></a>
+                        <a class="nav-link" href="#">Precios</a>
                     </li>
                 </ul>
-            </div>
-            <div class="flex-column-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary" href="#">Registrarse</i></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Registrarse</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </section>
@@ -57,30 +52,32 @@
 
     <section id="Header" class="my-fullscreen my-header">
         <div class="container">
-            <div class="my-text-box">
-                <h1 class="text-center text-md-left"><strong>Haz Trekking sin Parar</strong></h1>
-                <h5>Con Trekk-in te despreocupas de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</h5>
+            <div class="row">
+                <div class="my-text-box text-md-left mx-3">
+                    <h1>Haz Trekking sin Parar</h1>
+                    <h5>Con Trekk-in te despreocupas de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</h5>
 
-            </div>
-            <div style="margin-top: 10%; width: 400px;">
+                </div>
+                <div style="margin-top: 10%; width: 400px;">
+                </div>
             </div>
         </div>
     </section>
     <!-- Features -->
     <section id="Features">
-        <div class="container mt-5 px-2 px-sm-5">
-            <div class="row mb-5">
+        <div class="container-sm mt-5 px-2 px-sm-5">
+            <div class="row">
                 <div class="col text-center">
-                    <h1><strong>Caracteristicas</strong></h1>
+                    <h1>Caracteristicas</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-sm-6">
+            <div class="row mx-3">
+                <div class="col-12 col-md-6 text-center mt-5">
                     <img src="assets/images/bar-graph.svg" alt="">
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6 text-center text-md-left mt-5">
                     <h3>Estadisticas de tu progreso</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, pariatur non aspernatur excepturi provident, reiciendis culpa eum sapiente obcaecati dicta quas deleniti, est cupiditate voluptatibus cum facere. Similique, quo impedit!</p>
+                    <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, pariatur non aspernatur excepturi provident, reiciendis culpa eum sapiente obcaecati dicta quas deleniti, est cupiditate voluptatibus cum facere. Similique, quo impedit!</p>
                 </div>
             </div>
         </div>
@@ -96,9 +93,9 @@
         </div>
     </section>
     <section id="Deck">
-        <div class="container">
-            <div class="row pt-5 mx-2 mx-sm-5">
-                <div class="col-12 col-sm-6">
+        <div class="container-sm">
+            <div class="row mx-2 mx-sm-5">
+                <div class="col-12 col-md-6 mt-5">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Trekk-in Free</h4>
@@ -108,12 +105,14 @@
                                 <li>Ver mapas creado por usuarios</li>
                                 <li>Concetar con otros usuarios</li>
                             </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-none">
                             <hr>
                             <a href="#" class="btn btn-primary">Obtén Free</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6 mt-5">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Trekk-in Free</h4>
@@ -126,6 +125,8 @@
                                 <li>Mapas Offiline</li>
                                 <li>Integración con otras aplicaciones</li>
                             </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-none">
                             <hr>
                             <a href="#" class="btn btn-primary">Obtén Premium</a>
                         </div>
@@ -136,11 +137,16 @@
         </div>
     </section>
     <section id="Footer">
-        <div class="flex-container-footer px-2 px-sm-5">
-            <div class="flex-column-left">
-                <a class="nav-link" href="#">Legal</a>
-                <a class="nav-link" href="#">Cookies</i></a>
-                <a class="nav-link" href="#">Sobre anuncios</i></a>
+        <div class="row px-2 px-sm-5 py-3">
+            <div class="col-12 col-sm-8 text-center">
+                <div class="row justify-content-center justify-content-sm-start">
+                    <a class="nav-link" href="#">Legal</a>
+                    <a class="nav-link" href="#">Cookies</a>
+                    <a class="nav-link" href="#">Sobre anuncios</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 text-center text-sm-right">
+                <span>2018 Trekk-in SPA.</span>
             </div>
         </div>
         <hr>

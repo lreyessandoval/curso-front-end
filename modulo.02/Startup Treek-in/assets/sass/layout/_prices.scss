@@ -9,6 +9,19 @@
     padding-top: 10%;
 }
 
+#Prices h2 {
+    font-weight: $raleway-bold;
+    color: $white;
+}
+
 #Deck {
     background-color: $onyx;
+}
+
+#Prices h2 {
+    font-weight: $raleway-bold;
+}
+
+#Deck .card-footer {
+    border-top: 0px solid rgba(0, 0, 0, .125);
 }
