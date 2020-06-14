@@ -8,14 +8,14 @@
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: $white;
     background-color: $middleblue;
     border-color: $middleblue;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    color: #fff;
+    color: $white;
     background-color: $lavendergray;
     border-color: $lavendergray;
     box-shadow: 0 0 0 0.2rem $lavendergray;
@@ -24,7 +24,7 @@
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    color: #fff;
+    color: $white;
     background-color: $ballblue;
     border-color: $ballblue;
 }

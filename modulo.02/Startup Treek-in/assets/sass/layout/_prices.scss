@@ -25,3 +25,7 @@
 #Deck .card-footer {
     border-top: 0px solid rgba(0, 0, 0, .125);
 }
+
+#Deck .card:hover {
+    box-shadow: 0 .5rem 1rem $silverchalice !important;
+}

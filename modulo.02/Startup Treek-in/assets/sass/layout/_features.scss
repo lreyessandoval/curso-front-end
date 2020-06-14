@@ -10,4 +10,27 @@ h3 {
 #Features img {
     max-width: 100%;
     height: 100%;
+    animation-name: showgrafico;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes showgrafico {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: .75;
+    }
+    50% {
+        opacity: .50;
+    }
+    75% {
+        opacity: .25;
+    }
+    100% {
+        opacity: 0.1;
+    }
 }
