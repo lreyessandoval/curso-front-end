@@ -25,6 +25,9 @@ function validar() {
     //Valida formatos de correo...
     result += IsEmailFormat("correo", correo);
 
+    //Valida Numericos...accordion
+    result += IsNumber("telefono", telefono);
+
     if (result) {
         result = `Errores encontrados:\n ${result}`;
         alert(result);
@@ -50,7 +53,6 @@ function IsMaxLength(field, value, max) {
 }
 
 function IsEmailFormat(field, value) {
-    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (value)
         if (!IsEmail(value)) return `El campo "${field}" no tiene formato de e-mail...\n`;
 
@@ -60,4 +62,16 @@ function IsEmailFormat(field, value) {
 function IsEmail(email) {
     var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email) ? true : false;
+}
+
+function IsNumber(field, value) {
+    if (value)
+        if (!IsNumericInteger(value)) return `El campo "${field}" debe ser númerico y entero...\n`;
+
+    return "";
+}
+
+function IsNumericInteger(number) {
+    var regex = /^([0-9_]{0,15})+$/;
+    return regex.test(number) ? true : false;
 }
