@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora con JavaScript - {desafio} latam_</title>
+    <link type="text/css" href="assets/css/estilos.css" rel="stylesheet">
+</head>
+
+<body onload="init();">
+
+    <table class="calculadora">
+        <tr>
+            <td colspan="4"><span id="resultado"></span></td>
+        </tr>
+        <tr>
+            <td><button id="siete" onclick="addValue('7')">7</button></td>
+            <td><button id="ocho" onclick="addValue('8')">8</button></td>
+            <td><button id="nueve" onclick="addValue('9')">9</button></td>
+            <td><button id="division" onclick="addValue('/')">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="cuatro" onclick="addValue('4');">4</button></td>
+            <td><button id="cinco" onclick="addValue('5')">5</button></td>
+            <td><button id="seis" onclick="addValue('6')">6</button></td>
+            <td><button id="multiplicacion" onclick="addValue('*')">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="uno" onclick="addValue('1')">1</button></td>
+            <td><button id="dos" onclick="addValue('2')">2</button></td>
+            <td><button id="tres" onclick="addValue('3')">3</button></td>
+            <td><button id="resta" onclick="addValue('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="igual" onclick="getResult()">=</button></td>
+            <td><button id="reset" onclick="setValue('')">C</button></td>
+            <td><button id="cero" onclick="addValue('0')">0</button></td>
+            <td><button id="suma" onclick="addValue('+')">+</button></td>
+        </tr>
+
+
+
+    </table>
+
+    <script type="text/JavaScript" src="assets/js/calculadora.js"></script>
+</body>
+
+</html>
