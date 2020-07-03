@@ -1,36 +1,67 @@
 const api_url = 'https://pokeapi.co/api/v2';
-var card_template = getTemplate("assets/template/card.html");
+var card_template = getTemplate('card-template');
 var pokemons = [];
+var perPage = 4;
+var page = 1;
+var countRecords = 0;
+var pageNext = '';
+var pagePrevius = '';
+var firstLoad = true;
 
 $(document).ready(function() {
     $('#btnsearch').on('click', function() {
         showCatalog($('#search').val());
     });
-    $('#search').on('click', function() {
+    $('#search').on('change', function() {
         showCatalog($('#search').val());
     });
-    getPokemons();
+    $('#pageSize').val(perPage);
+
+    $('#pageSize').on('change', function() {
+        perPage = $('#pageSize').val();
+        page = 1;
+        getPokemons(perPage, 0, false);
+        setPagintation();
+    });
+
+    getPokemons(perPage, 0, false);
 });
 
-function showCatalog(filter) {
+function showCatalog(filter, limit, add) {
     var cards = [];
-    $('#spinner-border').show();
+    $('#overlay').show();
 
     var result_pokemons = pokemons;
     if (filter) {
         result_pokemons = pokemons.filter(pokemon => (pokemon.name.toLowerCase().includes(filter.toLowerCase())));
     }
 
-    result_pokemons = sortByKeyAsc(result_pokemons, 'name');
+    //Legend pagination
+    const recordFrom = (((page - 1) * perPage) + 1);
+    const recordTo = ((recordFrom + pokemons.length) - 1);
+    $('#legend-pagination').html('Mostrando desde ' + recordFrom + ' al ' + recordTo + ' de ' + countRecords + ' Pokemones');
+
+    //result_pokemons = sortByKeyAsc(result_pokemons, 'name');
     $.each(result_pokemons, function(index, val) {
-        if (val.video != "") {
-            var card = card_template.replace(/{index}/g, index).replace(/{name}/g, val.name.toUpperCase()).replace(/{image}/g, val.detail.sprites.front_default).replace(/{base_experience}/g, val.detail.base_experience).replace(/{height}/g, val.detail.height).replace(/{order}/g, val.detail.order).replace(/{weight}/g, val.detail.weight);
-            cards.push(card);
-        }
+
+        var card = card_template.replace(/{index}/g, index)
+            .replace(/{name}/g, val.name.toUpperCase())
+            .replace(/{image}/g, val.detail.sprites.front_default)
+            .replace(/{base_experience}/g, val.detail.base_experience)
+            .replace(/{height}/g, val.detail.height)
+            .replace(/{order}/g, val.detail.order)
+            .replace(/{weight}/g, val.detail.weight);
+        cards.push(card);
     });
 
-    $("#catalog").html(cards);
-    $('#spinner-border').hide();
+    if (add) $("#catalog").html($("#catalog").html() + cards.join(""));
+    else $("#catalog").html(cards.join(""));
+
+    if (firstLoad) {
+        setPagintation();
+        firstLoad = false;
+    }
+    $('#overlay').hide();
 }
 
 function showMetric(index) {
@@ -60,21 +91,24 @@ function showModal(title, value, reset) {
 /*
  Get full list
 */
-function getPokemons() {
+function getPokemons(limit, offset, add) {
+    $('#overlay').show();
+
     var result = null;
     $.ajax({
-        url: api_url + '/pokemon?limit=500&offset=0',
+        url: api_url + '/pokemon?limit=' + limit + '&offset=' + offset,
         type: 'get',
         dataType: 'json',
         async: true,
         success: function(response) {
             pokemons = response.results;
 
+            countRecords = response.count;
+
             pokemons.forEach(function(pokemon, index) {
-                //showProgress(pokemons.length, index + 1);
                 getDetail(pokemon.url, index);
             });
-            showCatalog();
+            showCatalog('', limit, add);
         }
     });
 }
@@ -95,31 +129,10 @@ function getDetail(url, index) {
 }
 
 /*
-  progress
-*/
-function showProgress(max, value, show) {
-    $('progress progress-bar').attr('aria-valuenow', value);
-    $('progress progress-bar').attr('aria-valuemax', max);
-    if (show) $('progress').show();
-    else $('progress').hide();
-}
-
-
-/*
    Utilerias...
 */
-function getTemplate(file) {
-    var result = null;
-    $.ajax({
-        url: file,
-        type: 'get',
-        dataType: 'text',
-        async: false,
-        success: function(data) {
-            result = data;
-        }
-    });
-    return result;
+function getTemplate(template) {
+    return $('#' + template).html();
 }
 
 function sortByKeyDesc(array, key) {
@@ -137,13 +150,42 @@ function sortByKeyAsc(array, key) {
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
 }
+/*
+  Pagintation
+*/
+function setPagintation() {
+    $('#page').Pagination({ // id to initial draw and use pagination
+        size: countRecords, // size of list input
+        pageShow: 5, // 5 page-item per page
+        page: page, // current page (default)
+        limit: perPage, // current limit show perpage (default)
+    }, function(obj) { // callback function, you can use it to re-draw table or something
+        $('#info').html('Current page: ' + obj.page);
+        page = obj.page;
+        var offset = ((page - 1) * perPage);
+
+        $('#overlay').show();
+        gotoTop();
+        getPokemons(perPage, offset, false); //load initial...
+    });
+}
+
+/*
+  Top of screen
+*/
+function gotoTop() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
 
 /* 
 
 */
-
 function genGraph(index) {
-
+    //Data maps...
     var data = pokemons[index].detail.stats.map(function(item, index) {
         return { x: index, y: item.base_stat, label: item.stat.name.toUpperCase() };
     });
@@ -165,5 +207,4 @@ function genGraph(index) {
         }]
     });
     chart.render();
-
 }

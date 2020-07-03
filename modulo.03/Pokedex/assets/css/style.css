@@ -1,7 +1,7 @@
 /* BASE */
 
 :root {
-    --color-1: #2F58BC;
+    --color-1: #e67e2a;
     --color-2: #4582DB;
     --color-3: #B3B3B3;
     --color-4: #E6E6E6;
@@ -17,9 +17,13 @@ html,
 body {
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 400;
-    background-color: var(--color-7);
+    background-color: var(--color-4);
     height: 100%;
     margin: 0;
+}
+
+#content {
+    margin-top: 120px;
 }
 
 b,
@@ -116,7 +120,7 @@ strong {
 /* NAVBAR */
 
 .navbar {
-    border-bottom: 5px var(--color-2) solid;
+    border-bottom: 5px var(--color-1) solid;
 }
 
 .navbar-brand img {
@@ -159,6 +163,45 @@ footer hr {
 
 footer a {
     color: var(--color-4);
+}
+
+.pagination {
+    justify-content: center;
+}
+
+
+/*
+  Overlay 
+*/
+
+.container>.overlay,
+.card>.loading-img,
+.overlay-wrapper>.overlay,
+.overlay-wrapper>.loading-img,
+.info-box>.overlay,
+.info-box>.loading-img,
+.small-box>.overlay,
+.small-box>.loading-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.container .overlay,
+.overlay-wrapper .overlay,
+.info-box .overlay,
+.small-box .overlay {
+    border-radius: 0.25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
 }
 
 
