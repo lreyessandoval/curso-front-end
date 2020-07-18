@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+
+/*
+  Overlay 
+*/
+
+.container>.overlay,
+.card>.loading-img,
+.overlay-wrapper>.overlay,
+.overlay-wrapper>.loading-img,
+.info-box>.overlay,
+.info-box>.loading-img,
+.small-box>.overlay,
+.small-box>.loading-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.container .overlay,
+.overlay-wrapper .overlay,
+.info-box .overlay,
+.small-box .overlay {
+    border-radius: 0.25rem;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50;
+}

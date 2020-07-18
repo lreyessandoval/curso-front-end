@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /* Click to Create*/
     $('#btnnewUser').click(function() {
         const name = $('#name').val();
         const lastname = $('#lastname').val();
